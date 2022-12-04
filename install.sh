@@ -2745,7 +2745,7 @@ EOF
 	elif [[ "${type}" == "vlessws" ]]; then
 
 		echoContent yellow " ---> 通用格式(VLESS+WS+TLS)"
-		VLESSCONF="vless://${id}@${currentAdd}:${currentDefaultPort}?encryption=none&security=tls&type=ws&host=${currentHost}&sni=${currentHost}&path=/${currentPath}ws#Anonymith"
+		VLESSCONF="vless://${id}@${currentAdd}:${currentDefaultPort}?encryption=none&security=tls&type=ws&host=${currentHost}&sni=${currentHost}&path=/${currentPath}ws#${email}"
 		echoContent green "    ${VLESSCONF}\n"
 		
 		touch ~/vlessconf.txt
