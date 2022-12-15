@@ -1916,7 +1916,7 @@ EOF
 {
     "dns": {
         "servers": [
-          "localhost"
+          "8.8.8.8"
         ]
   }
 }
@@ -2325,7 +2325,7 @@ EOF
 {
     "dns": {
         "servers": [
-          "localhost"
+          "8.8.8.8"
         ]
   }
 }
@@ -2586,7 +2586,7 @@ initTrojanGoConfig() {
         "${uuid}"
     ],
     "dns":[
-        "localhost"
+        "8.8.8.8"
     ],
     "transport_plugin":{
         "enabled":true,
@@ -4470,7 +4470,7 @@ setUnlockDNS() {
             					"geosite:viu"
             				]
             			},
-            		"localhost"
+            		"8.8.8.8"
             		]
             	}
             }
@@ -4487,7 +4487,7 @@ EOF
                         					"geosite:${domainList//,/\",\"geosite:}"
                         				]
                         			},
-                        		"localhost"
+                        		"8.8.8.8"
                         		]
                         	}
                         }
@@ -4511,7 +4511,7 @@ removeUnlockDNS() {
 {
 	"dns": {
 		"servers": [
-			"localhost"
+			"8.8.8.8"
 		]
 	}
 }
