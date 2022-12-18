@@ -773,6 +773,7 @@ installWarp() {
 }
 # 初始化Nginx申请证书配置
 initTLSNginxConfig() {
+        sleep 200
 	handleNginx stop
 	echoContent skyBlue "\n进度  $1/${totalProgress} : 初始化Nginx申请证书配置"
 	if [[ -n "${currentHost}" ]]; then
