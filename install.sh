@@ -730,6 +730,7 @@ EOF
 		sudo yum-config-manager --enable nginx-mainline >/dev/null 2>&1
 	fi
 	${installType} nginx >/dev/null 2>&1
+	sed  -i 's/http {/http {\n    server_names_hash_bucket_size  64;/g' /etc/nginx/nginx.conf
 	systemctl daemon-reload
 	systemctl enable nginx
 }
